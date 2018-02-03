@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block head_title %} Working | {{ block.super }} {% endblock head_title %}
+<!-- This is a page to let the user know that the feature is being worked on -->
+
+{% block content %}
+
+<!-- Page Wrapper -->
+	<div id="wip-page-wrapper">
+		<!--Blurry Box-->
+			<div class="blurred-box"></div>
+
+		<!-- Work In Progress -->
+			<h1 class="wip">
+				Section under construction.</br>
+				Check back later.
+			</h1>
+		
+	</div>
+
+{% endblock %}

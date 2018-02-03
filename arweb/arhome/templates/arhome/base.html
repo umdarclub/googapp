@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Design: <a href="http://html5up.net">HTML5 UP</a>
+-->
+
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>{% block head_title %} AR Club {% endblock head_title %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href=" {% static 'arhome/assets/css/main.css' %} " />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="home">AR Club</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/">Home</a></li>
+								<li><a href="/about">About Us</a></li>
+								<li><a href="/wip">Projects</a></li>
+								<li><a href="/events">Events</a></li>
+								<li><a href="/wip">Log In</a></li>
+								<li><a href="/wip">Sign Up</a></li>
+							</ul>
+							<a href="#" class="close"></a>
+						</div>
+					</nav>
+
+				<!-- Logo -->
+				<section id="arlogo">
+					<div class="logo">
+						<a class="fa fa-cube fa-5x" aria-hidden="true" href="/"></a>
+					</div>
+				</section>
+
+				<!-- Content -->
+				<div class="container">
+					{% block content %}{% endblock content %}
+				</div>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="homefoot left">
+						<ul class="arsocial">
+							<a target="blank_" class="fa fa-facebook fa-lg arfacebook" href="https://www.facebook.com/groups/shape.reality/"></a>
+							<a target="blank_" class="fa fa-twitter fa-lg artwitter" href="https://twitter.com/_arclub"></a>
+							<!--Future: Email will be a form where user will be able to send to umdarclub@gmail.com-->
+							<a class="fa fa-envelope fa-lg aremail" href="mailto:umdarclub@gmail.com"></a>
+						</ul>
+					</div>
+
+					<div class="homefoot right">
+						<ul class="arcopyright">
+							<span> &copy; </span> <i> AR Club All rights reserved.</i>
+						</ul>							
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src=" {% static 'arhome/assets/js/skel.min.js' %} "></script>
+			<script src=" {% static 'arhome/assets/js/jquery.min.js' %} "></script>
+			<script src=" {% static 'arhome/assets/js/jquery.scrollex.min.js' %} "></script>
+			<script src=" {% static 'arhome/assets/js/util.js' %} "></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src=" {% static 'arhome/assets/js/main.js' %} "></script>
+
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>Error | AR Club</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href=" {% static 'arhome/assets/css/main.css' %} " />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<!-- 	<header id="header" class="alt">
+						<h1><a href="home">AR Club</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header> -->
+
+				<!-- Menu -->
+				<!-- 	<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/">Home</a></li>
+								<li><a href="/about">About Us</a></li>
+								<li><a href="/wip">Projects</a></li>
+								<li><a href="/events">Events</a></li>
+								<li><a href="/wip">Log In</a></li>
+								<li><a href="/wip">Sign Up</a></li>
+							</ul>
+							<a href="#" class="close"></a>
+						</div>
+					</nav> -->
+
+				<!--Handle 404 Error-->
+					<div id="handle404">
+						<strong>Ooops!</strong> Something went wrong. </br>
+						We are working on it. Come back in a bit and try something different.
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src=" {% static 'arhome/assets/js/skel.min.js' %} "></script>
+			<script src=" {% static 'arhome/assets/js/jquery.min.js' %} "></script>
+			<script src=" {% static 'arhome/assets/js/jquery.scrollex.min.js' %} "></script>
+			<script src=" {% static 'arhome/assets/js/util.js' %} "></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src=" {% static 'arhome/assets/js/main.js' %} "></script>
+
+	</body>
+</html>
